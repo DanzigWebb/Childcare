@@ -1,0 +1,141 @@
+
+///////////////////////////////////////////
+// главный экран
+/////////////////////////////////////////// 
+
+.introduction-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 80px 15px
+.introduction-content__title
+  line-height: 1.6
+  margin-top: 0
+.introduction-content__par
+  font-size: 18px
+  padding-bottom: 20px
+
+.introduction-bg
+  width: 70%
+  padding: 0 15px
+
+@media (max-width: 775px)
+  .introduction-bg
+    display: none
+@media (max-width: 480px)
+  .introduction-content__title
+    line-height: 1.2
+///////////////////////////////////////////
+// триггер
+/////////////////////////////////////////// 
+
+.trigger
+  background: $gradient
+.trigger-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 225px
+.trigger-heading
+  color: #fff
+  font-size: 18px
+.trigger-heading__title
+  color: #fff
+  font-weight: 600
+  line-height: 1.6
+  margin-bottom: 5px
+  margin-top: 0
+.trigger-heading__par
+  margin: 0
+.trigger-icon
+  height: 126px
+  width: 126px
+  transition: 0.3s
+.trigger-icon:hover
+  .a
+    opacity: 0.5
+
+@media (max-width: 720px)
+  .trigger-heading__title
+    font-size: 30px
+  .trigger-heading__par
+    font-size: 15px
+  .trigger-icon
+    height: 86px
+    width: 86px
+    padding: 10px
+@media (max-width: 480px)
+  .trigger-heading__title
+    line-height: 1.2
+
+///////////////////////////////////////////
+// о нас
+/////////////////////////////////////////// 
+
+.about
+  padding-top: 120px
+.about-help
+  display: flex
+  justify-content: space-between
+  align-items: center
+.about-help-icon
+  width: 85%
+  padding-right: 120px
+.about-help-content__hand
+  color: $p-color--lighter
+  font-size: 24px
+  margin: 0
+.about-help-content__title
+  margin: 0
+.about-help-content__text
+  padding: 50px 0
+
+@media (max-width: 900px)
+  .about
+    padding-top: 60px
+  .about-help-icon
+    display: none
+  .about-help-content__text
+    padding: 30px 0
+  
+
+.about-box
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  text-align: center
+  margin-top: 80px
+
+.about-item
+  padding-top: 40px
+  width: 32%
+  background-color: $gray
+  border: 1px solid #EEEEEE
+  position: relative
+  height: 340px
+  display: block
+.about-item:hover
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.25)
+  background-color: #fff
+.about-items-icon
+  height: 65px
+  width: 65px
+  background-size: contain
+  background-repeat: no-repeat
+  display: inline-block
+.icon--heart
+  background-image: url(img/heart.svg)
+.icon--baby-boy
+  background-image: url(img/baby-boy.svg)
+.icon--peoplesay
+  background-image: url(img/bg_peoplesay.svg)
+.about-item__text
+  padding: 0 50px
+  color: $p-color
+
+.about-item__button
+  position: absolute
+  bottom: -30px
+  left: 0
+  right: 0
+  margin: 0 20%
