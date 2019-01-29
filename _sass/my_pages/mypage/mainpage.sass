@@ -73,11 +73,12 @@
 /////////////////////////////////////////// 
 
 .about
-  padding-top: 120px
+  padding: 100px 0
 .about-help
   display: flex
   justify-content: space-between
   align-items: center
+  margin-bottom: 50px
 .about-help-icon
   width: 85%
   padding-right: 120px
@@ -98,22 +99,17 @@
   .about-help-content__text
     padding: 30px 0
   
-
 .about-box
-  display: flex
-  justify-content: center
-  align-items: flex-start
   text-align: center
-  margin-top: 80px
 
 .about-item
   padding-top: 40px
-  width: 32%
   background-color: $gray
   border: 1px solid #EEEEEE
   position: relative
   height: 340px
   display: block
+  margin-bottom: 40px
 .about-item:hover
   box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.25)
   background-color: #fff
@@ -139,3 +135,94 @@
   left: 0
   right: 0
   margin: 0 20%
+
+///////////////////////////////////////////
+// компании
+/////////////////////////////////////////// 
+.compaing-main
+  max-width: 570px
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
+
+.compaing-main__pic
+  width: 100%
+  height: 270px
+  background-image: url(img/campaing__soldier.jpg)
+  background-size: cover
+.campaing__title
+  margin-top: 10px
+  margin-bottom: 60px
+.compaing-main-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 15px
+  border-bottom: 1px solid #F5F5F5
+.compaing-main-box-item
+  display: flex
+  flex-direction: column
+  border-right: 1px solid #F5F5F5
+  padding-right: 13%
+.compaing-main-box__title
+  margin: 0
+  font-weight: 600
+  color: $h-color
+.compaing-main-box__price
+  margin: 0
+  color: $accent
+
+.campaing-item
+  display: flex
+  justify-content: space-between
+  padding: 25px
+  align-items: center
+.campaing-item-heading
+  padding-right: 25px
+.campaing-item__title
+  margin: 0
+  margin-bottom: 10px
+.campaing-item__text
+  margin: 0
+  font-size: 14px
+  color: $p-color
+.campaing-item__circle
+  height: 120px
+
+.campaing-content
+  display: flex
+.compaing-right-box
+  display: flex
+  flex-direction: column
+.campaing-item--left
+  flex-direction: row-reverse
+  border: 1px solid #F5F5F5
+  transition: 0.3s
+.campaing-item--left:hover
+  background-color: $accent
+  .campaing-item__title
+    color: #fff
+  .campaing-item__text
+    color: #fff
+.campaing-item-heading--left
+  padding-right: 0
+  padding-left: 25px
+
+@media (max-width: 1300px)
+  .campaing-content
+    flex-direction: column
+    justify-content: center
+    margin: auto
+  .compaing-right-box
+    max-width: 570px
+
+@media (max-width: 430px)
+  .compaing-main-box-item
+    padding-right: 9%
+  .campaing-item__circle
+    height: 90px
+@media (max-width: 360px)
+  .compaing-main-box-item
+    padding-right: 10px
+  .campaing-item
+    flex-direction: column-reverse
+  .campaing-item__circle
+    margin-bottom: 15px
