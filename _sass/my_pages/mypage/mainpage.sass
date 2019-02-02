@@ -7,7 +7,6 @@
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 80px 15px
 .introduction-content__title
   line-height: 1.6
   margin-top: 0
@@ -72,8 +71,6 @@
 // о нас
 /////////////////////////////////////////// 
 
-.about
-  padding: 100px 0
 .about-help
   display: flex
   justify-content: space-between
@@ -226,3 +223,27 @@
     flex-direction: column-reverse
   .campaing-item__circle
     margin-bottom: 15px
+
+///////////////////////////////////////////
+// команда
+/////////////////////////////////////////// 
+
+.team-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+.team-heading
+  width: 49%
+.team-heading__title
+  margin-top: 0
+.team-heading__text
+  margin-bottom: 40px
+.team-img__pic
+  width: 422px
+  min-height: 222px
+
+@media (max-width: 705px)
+  .team-img__pic
+    display: none
+  .team-heading
+    width: 100%
