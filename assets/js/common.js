@@ -45,3 +45,30 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $('.reviews-carousel').owlCarousel({
+        loop:false,
+        margin:0,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                dots:true,
+                loop:true
+            },
+            600:{
+                items:1,
+                dots:true,
+                nav:false,
+                loop:true
+            },
+            1000:{
+                items:1,
+                nav:false,
+                dots:true,
+                loop:true
+            }
+        }
+    });
+});

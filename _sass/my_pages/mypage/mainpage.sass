@@ -242,8 +242,88 @@
   width: 422px
   min-height: 222px
 
+.team-heading-form__input
+  padding: 18px 30px
+  border-radius: 5px
+  width: 30%
+
+  
 @media (max-width: 705px)
   .team-img__pic
     display: none
   .team-heading
     width: 100%
+
+  .team-heading-form__input
+    width: 60%
+    padding: 18px 10px
+@media (max-width: 360px)
+  .team-heading-form__input
+    width: 50%
+
+///////////////////////////////////////////
+// отзывы
+/////////////////////////////////////////// 
+
+.reviews
+  background-image: url(img/bg_reviews.svg)
+  background-size: cover
+  background-position: top center
+  background-repeat: no-repeat
+  text-align: center
+  color: #fff
+  padding: 100px 0
+  position: relative
+.container-quotes
+  position: relative
+.container-quotes:before
+  content: '"'
+  font-size: 222px
+  color: #fff
+  position: absolute
+  left: 0
+  top: -150px
+
+
+.reviews__title
+  color: #fff
+
+.reviews-gallery-item
+  margin: auto
+  width: 60%
+  margin-bottom: 35px
+
+.reviews  
+  .owl-carousel 
+    .owl-item
+      .reviews-person__avatar
+        width: 55px
+        display: inline-block
+        float: left
+        margin-right: 20px
+.reviews-person
+  margin: auto
+  text-align: left
+  margin-top: 40px
+  display: flex
+  justify-content: center
+.reviews-person__name
+  margin: 0
+.reviews-person__prof
+  margin: 0
+  font-size: 16px
+  font-weight: 400
+  color: $gray
+
+@media (min-width: 1300px)
+  .reviews
+    padding-top: 200px
+
+@media (max-width: 1300px)
+  .container-quotes:before
+    top: -120px
+@media (max-width: 470px)
+  .container-quotes:before
+    font-size: 180px
+  .reviews
+    padding-bottom: 40px
