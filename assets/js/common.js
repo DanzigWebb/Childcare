@@ -72,3 +72,29 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $('.blogpost-carousel').owlCarousel({
+        loop:false,
+        margin:0,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                loop:true
+            },
+            500:{
+                items:2,
+                dots:false,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:false,
+                dots:false,
+            }
+        }
+    });
+});
+
